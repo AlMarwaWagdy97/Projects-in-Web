@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="Bussinis.css" rel="stylesheet">
+    <script src="Bussinis.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="F:\Marwa\Session Ahmed\Session1\Task1\fontawesomeweb\css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Business 2</title>
+    <link rel="icon" href="icon.jpg">
+</head>
+<body>
+    <header>
+        <div id="blockheader" >
+            <a href="" id="logo">
+                <i class="fas fa-fire" style="font-size: 20px; margin: 15px;"></i>
+                <span> LOGO</span>
+            </a>
+            <ul id="listheader">
+                <li class="Li1"><a href="" style="color: yellowgreen">Home</a></li>
+                <li class="Li1"><a href="">Products</a></li>
+                <li class="Li1"><a href="" role="button" onclick="myfun()">Services</a>
+                    <i class="fas fa-caret-down" style="font-size: 12px;" onclick="myfun()"></i>
+                    <ul class = "servise">
+                        <li><a href="">Engage</a></li>
+                        <li><a href="">Pontificate</a></li>
+                        <li><a href="">Synergize</a></li>
+                    </ul>
+                </li>
+                <!--<li class="Li1"><select name="Services" id="lili" aria-valuetext="Services">Services
+                    <option value="">Engagde</option>
+                    <option value="">Pontificate</option>
+                    <option value="">Synergize</option>
+                </select></li>-->
+                <li class="Li1"><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div id="fistdiv" >
+            <h1 id="headfont" >Dramatically Engage</h1>
+            <p >Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+            <a href="" class="buttonstyle">Engage Now</a>
+        </div>  
+    </header> 
+    <section id="sectin1">
+        <i class="fab fa-apple" ></i>
+        <h2>Completely synergize resource taxing relationships</h2>
+        <div id="divsec1">
+            <p>Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="divs">
+            <div class="divsec2">
+                <img src="mcro.jpg" alt="microfon" class="imgdiv">
+            </div>
+            <div class="divsec2">  
+                <h2>Best in Class</h2>
+                <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                <a href="" class="buttonstyle">Classify It</a>
+            </div>
+        </div>     
+    </section>
+    <section id="section3">
+        <div> 
+            <div class="divsec3">  
+                <h2> Superior Quality</h2>
+                <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+                <a href="" >Test It</a>
+            </div>
+            <div class="divsec3">
+                    <img src="mobile.jpg" alt="mobile" >
+            </div>
+        </div>
+    </section>
+    <section id="section4">
+        <div style="height: 296px;">
+            <div class="divsec4"><a href=""><img src="syn.jpg" alt="Unleash"><p class="writecenter">Unleash</p></a></p></div>
+            <div class="divsec4"><a href=""><img src="sleash.jpg" alt="Synergize"><p class="writecenter">Synergize</p></a></div>
+            <div class="divsec4"><a href=""><img src="proc.jpg" alt="Procrastinate"><p class="writecenter">Procrastinate</p></a></div>
+        </div>
+    </section>
+    <section id="section5">
+        <div id="divsec5">
+            <i class="fas fa-thumbtack"></i>
+            <h2> Sanity Check</h2>
+            <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+            <a href="" class="buttonstyle">Check Now</a>
+        </div>
+    </section>
+    <section id="section6">
+        <div>
+            <h2>Contuct Us</h2>
+            <i class="fas fa-phone-alt" style="font-size: 40px;"></i>
+            <p> +1(23) 456 7890</p>
+            <i class="fas fa-envelope" style="font-size: 40px;"></i>
+            <p> info@example.com</p>
+
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Copyright © Example.com 2015</p>
+    </footer>
+    <script>
+        var myNav = document.getElementById('blockheader');
+        window.onscroll = function () { 
+        "use strict";
+        if (document.body.scrollTop >= 200 ) {
+            myNav.classList.add("befor");
+            myNav.classList.remove("after");
+        } 
+        else {
+            myNav.classList.add("after");
+            myNav.classList.remove("befor");
+        }
+        };
+        function myfun(){
+            document.getElementById('servise').style.display="block";
+        }
+    </script>
+</body>
+</html>

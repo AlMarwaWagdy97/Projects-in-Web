@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body> 
+        <form id ="form1">
+            <p id = "welcome" onmouseover= " this.style.color='red'" onmouseout="this.style.color='blueviolet'"><strong>Welcome</strong></p>
+            <input class="f" id ="name" type ="text" placeholder="Name"><br>
+            <input class="f" id ="email" type ="text" placeholder="Email"><br>
+            <input class="f" id ="pass" type ="password" placeholder="password"><br>
+            <button id = "submit" onmouseover= " this.style.color='red'" onmouseout="this.style.color='black'">submit</button>
+        </form><br>
+        <div>
+            <p id ="reg"></p>
+            <button class="b" id="rev">get all names</button>
+            <button class="b" id="rem">Remove all</button>   
+        </div>
+        
+        <div>
+            <select   onchange = "selcolor()"  id="selec" size="1">
+                <option value="darkcyan">darkcyan</option>
+                <option  value="yellow">yellow</option>
+            </select><br>
+            <input class="f"  type="text" id = "remo" onkeydown="disa()"><br>
+            <button disabled   class="f" id = "remove"  onclick="removecolor()">remove color</button>
+            <button disabled   class="f" id = "add"  onclick="addcolor()">add color</button>   
+        </div>
+        
+        <div>
+            <input class="f" id="namess" type="text" placeholder="Name"><br>
+            <button class="f" id="addname" onclick="checkname()">Add name</button>
+            <p id="item"></p>
+            <button  class="f" id="show" onclick="displaynames()">display name</button>
+        </div>
+        
+        <script src = "js.js"></script>
+        
+        
+    </body>
+</html>

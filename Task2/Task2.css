@@ -1,0 +1,145 @@
+body:hover #draw{
+    top: 50px;
+}
+#div1{
+    background-image: url("images/div1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px; 
+    transition: all 2s;
+}
+#draw{
+    left: 783px;
+    right: 198px;
+    text-align: center;
+    top: -500px;
+    background-color: tealq;
+    /*transition: all 1s;*/
+    animation-name: drwa;
+    animation-duration: 2s;
+}
+
+#draw button{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#div2{
+    background-color: gray;
+    width: 100%;
+    height: 330px;
+}
+#div2_1{
+    left: 21%;
+    width: 270px;
+    position: absolute;
+    height: 280px;
+    margin: 10px;
+
+}
+#div2_1 img{
+    text-align: center;
+    position: relative;
+}
+#div2_1 h2{
+    text-align: center;
+}
+#icons{
+    position: absolute;
+    right: 6px;
+    bottom: 38px;
+    color: #ffffff;
+    background-color: rgba(60, 126, 224, 0.6);
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 4px;
+}
+#icons i{
+    padding-right: 5px;
+    padding-left: 4px;
+}
+#icons i:hover{
+    opacity: 0.5;
+}
+#div2_2{
+    position: absolute;
+    left: 53%;
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+}
+.background{
+    background-image: url("images/img.jpg");
+    float: right;  
+    width: 150px;
+    height: 120px;
+    margin: 5px;
+    position: relative;
+}
+
+.layer{
+    position: relative;
+    background-color: rgba(60, 126, 224, 0.4);
+    float: right;  
+    width: 150px;
+    height: 120px;
+    transition: all 2s;
+}
+#div2_2 h2{
+    text-align: center;
+}
+.layer:hover{
+    transform:rotate(360deg);
+}
+.layer h3{
+    text-align: center;
+    display: none;
+    transition: all 2s;
+    transition-delay: 2s;
+    margin-top: 0px;
+
+}
+.layer p{
+    display: none;
+    transition-delay: 1s;
+    transition: all 2s;
+}
+.layer:hover h3 {
+    display: block;
+    background-color:darkslateblue;
+
+}
+.layer:hover  p {
+    display: block;
+}
+#div3{
+    position: absolute;
+    background-color: floralwhite;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    margin-top: 0px;
+}
+#footer img{
+    border-radius: 360px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    transition: all 0.8s;
+}
+#footer img:hover{
+    transform: scale(1.2);
+}
+/*@media  only screen and (max-width: 1366spx){
+   
+    #draw{ transition: all 2s;top: 200px;}
+}*/
+@keyframes drwa {
+    from { top: -10px;}
+    to { top: 50px;}
+}
+
+  
+
